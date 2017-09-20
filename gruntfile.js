@@ -18,8 +18,9 @@ module.exports = function(grunt) {
         },
         less: {
             dist: {
-                src: 'app/globals/less/styles.less',
-                dest: 'dist/styles.css'
+                files: {
+                    'dist/styles.css': 'app/globals/less/styles.less'
+                }
             }
         },
         watch: {
